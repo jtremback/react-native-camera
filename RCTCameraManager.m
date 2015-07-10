@@ -27,54 +27,54 @@ RCT_EXPORT_VIEW_PROPERTY(torchMode, NSInteger);
 - (NSDictionary *)constantsToExport
 {
   return @{
-    @"Aspect": @{
-    @"stretch": @(RCTCameraAspectStretch),
-    @"fit": @(RCTCameraAspectFit),
-    @"fill": @(RCTCameraAspectFill)
-    },
-    @"BarCodeType": @{
-    @"upce": AVMetadataObjectTypeUPCECode,
-    @"code39": AVMetadataObjectTypeCode39Code,
-    @"code39mod43": AVMetadataObjectTypeCode39Mod43Code,
-    @"ean13": AVMetadataObjectTypeEAN13Code,
-    @"ean8":  AVMetadataObjectTypeEAN8Code,
-    @"code93": AVMetadataObjectTypeCode93Code,
-    @"code138": AVMetadataObjectTypeCode128Code,
-    @"pdf417": AVMetadataObjectTypePDF417Code,
-    @"qr": AVMetadataObjectTypeQRCode,
-    @"aztec": AVMetadataObjectTypeAztecCode
-    },
-    @"Type": @{
-    @"front": @(RCTCameraTypeFront),
-    @"back": @(RCTCameraTypeBack)
-    },
-    @"CaptureMode": @{
-    @"still": @(RCTCameraCaptureModeStill),
-    @"video": @(RCTCameraCaptureModeVideo)
-    },
-    @"CaptureTarget": @{
-    @"memory": @(RCTCameraCaptureTargetMemory),
-    @"disk": @(RCTCameraCaptureTargetDisk),
-    @"cameraRoll": @(RCTCameraCaptureTargetCameraRoll)
-    },
-    @"Orientation": @{
-    @"auto": @(RCTCameraOrientationAuto),
-    @"landscapeLeft": @(RCTCameraOrientationLandscapeLeft),
-    @"landscapeRight": @(RCTCameraOrientationLandscapeRight),
-    @"portrait": @(RCTCameraOrientationPortrait),
-    @"portraitUpsideDown": @(RCTCameraOrientationPortraitUpsideDown)
-    },
-    @"FlashMode": @{
-    @"off": @(RCTCameraFlashModeOff),
-    @"on": @(RCTCameraFlashModeOn),
-    @"auto": @(RCTCameraFlashModeAuto)
-    },
-    @"TorchMode": @{
-    @"off": @(RCTCameraTorchModeOff),
-    @"on": @(RCTCameraTorchModeOn),
-    @"auto": @(RCTCameraTorchModeAuto)
-    }
-  };
+           @"Aspect": @{
+               @"stretch": @(RCTCameraAspectStretch),
+               @"fit": @(RCTCameraAspectFit),
+               @"fill": @(RCTCameraAspectFill)
+               },
+           @"BarCodeType": @{
+               @"upce": AVMetadataObjectTypeUPCECode,
+               @"code39": AVMetadataObjectTypeCode39Code,
+               @"code39mod43": AVMetadataObjectTypeCode39Mod43Code,
+               @"ean13": AVMetadataObjectTypeEAN13Code,
+               @"ean8":  AVMetadataObjectTypeEAN8Code,
+               @"code93": AVMetadataObjectTypeCode93Code,
+               @"code138": AVMetadataObjectTypeCode128Code,
+               @"pdf417": AVMetadataObjectTypePDF417Code,
+               @"qr": AVMetadataObjectTypeQRCode,
+               @"aztec": AVMetadataObjectTypeAztecCode
+               },
+           @"Type": @{
+               @"front": @(RCTCameraTypeFront),
+               @"back": @(RCTCameraTypeBack)
+               },
+           @"CaptureMode": @{
+               @"still": @(RCTCameraCaptureModeStill),
+               @"video": @(RCTCameraCaptureModeVideo)
+               },
+           @"CaptureTarget": @{
+               @"memory": @(RCTCameraCaptureTargetMemory),
+               @"disk": @(RCTCameraCaptureTargetDisk),
+               @"cameraRoll": @(RCTCameraCaptureTargetCameraRoll)
+               },
+           @"Orientation": @{
+               @"auto": @(RCTCameraOrientationAuto),
+               @"landscapeLeft": @(RCTCameraOrientationLandscapeLeft),
+               @"landscapeRight": @(RCTCameraOrientationLandscapeRight),
+               @"portrait": @(RCTCameraOrientationPortrait),
+               @"portraitUpsideDown": @(RCTCameraOrientationPortraitUpsideDown)
+               },
+           @"FlashMode": @{
+               @"off": @(RCTCameraFlashModeOff),
+               @"on": @(RCTCameraFlashModeOn),
+               @"auto": @(RCTCameraFlashModeAuto)
+               },
+           @"TorchMode": @{
+               @"off": @(RCTCameraTorchModeOff),
+               @"on": @(RCTCameraTorchModeOn),
+               @"auto": @(RCTCameraTorchModeAuto)
+               }
+           };
 }
 
 - (id)init {
