@@ -514,31 +514,6 @@ RCT_EXPORT_METHOD(stopCapture) {
   return rotatedImage;
 }
 
-//- (void)storeImage:(UIImage*)image target:(NSInteger)target callback:(RCTResponseSenderBlock)callback {
-//  UIImage *rotatedImage = [image resizedImage:CGSizeMake(image.size.width, image.size.height) interpolationQuality:kCGInterpolationDefault];
-//
-//  NSString *responseString;
-//
-//  if (target == RCTCameraCaptureTargetMemory) {
-//    responseString = [UIImageJPEGRepresentation(rotatedImage, 1.0) base64EncodedStringWithOptions:0];
-//  }
-//  else if (target == RCTCameraCaptureTargetDisk) {
-//    responseString = [self saveImage:rotatedImage withName:[[NSUUID UUID] UUIDString]];
-//  }
-//  else if (target == RCTCameraCaptureTargetCameraRoll) {
-//    [[[ALAssetsLibrary alloc] init] writeImageToSavedPhotosAlbum:rotatedImage.CGImage metadata:nil completionBlock:^(NSURL* url, NSError* error) {
-//      if (error == nil) {
-//        callback(@[[NSNull null], [url absoluteString]]);
-//      }
-//      else {
-//        callback(@[RCTMakeError(error.description, nil, nil)]);
-//      }
-//    }];
-//    return;
-//  }
-//  callback(@[[NSNull null], responseString]);
-//}
-
 -(void)captureVideo:(NSInteger)target options:(NSDictionary *)options callback:(RCTResponseSenderBlock)callback {
 
   if (self.movieFileOutput.recording) {
